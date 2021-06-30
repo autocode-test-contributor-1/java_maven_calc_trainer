@@ -1,6 +1,6 @@
 package com.epam;
 
-//QualityGateIssuesWeightsMapIsEmpty test
+//QualityGateIssuesWeightsMap test
 public class CalcServiceImpl implements CalcService {
     @Override
     public int add(int a, int b) {
@@ -29,7 +29,6 @@ public class CalcServiceImpl implements CalcService {
         if (b == 0) {
             return 0;
         }
-
         int result = a / b;
 
         return result;
