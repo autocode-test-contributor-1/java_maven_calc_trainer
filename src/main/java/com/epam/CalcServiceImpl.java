@@ -4,6 +4,7 @@ package com.epam;
 public class CalcServiceImpl implements CalcService {
     @Override
     public int add(int a, int b) {
+        recursivePrint(1);
         return a + b;
     }
 
@@ -23,5 +24,12 @@ public class CalcServiceImpl implements CalcService {
             return 0;
         }
         return a / b;
+    }
+
+    public void recursivePrint(int num) {
+        if (num != 0) {
+            recursivePrint(++num);
+        }
+
     }
 }
